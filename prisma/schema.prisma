@@ -1,0 +1,53 @@
+// Prisma Schema for Prompt Vault
+// PostgreSQL Database
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Prompt {
+  id            String   @id @default(cuid())
+  tweetUrl      String?
+  tweetId       String?  @unique
+  promptText    String
+  tags          String[] @default([])
+  author        String?
+  authorHandle  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations
+  media         Media[]
+
+  @@index([createdAt(sort: Desc)])
+  @@index([tweetId])
+}
+
+model Media {
+  id          String   @id @default(cuid())
+  promptId    String
+  type        String   // 'image' | 'video' | 'gif'
+  url         String   // Original URL (for reference)
+  localPath   String?  // Local file path after download
+  thumbnailPath String? // Thumbnail for videos
+  createdAt   DateTime @default(now())
+
+  // Relations
+  prompt      Prompt   @relation(fields: [promptId], references: [id], onDelete: Cascade)
+
+  @@index([promptId])
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  password      String   // Hashed password
+  name          String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
