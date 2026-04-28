@@ -35,6 +35,10 @@ Everything is stored locally. No third-party cloud. Your prompts stay yours.
 
 ---
 
+## Project Status
+
+Self-hosted product prototype. The repository is public as a portfolio and reference implementation for organizing AI prompts and workflow assets.
+
 ## Features
 
 - **One-click tweet import** — Paste a Twitter/X URL; the app fetches text, media, and author info automatically via vxtwitter / fxtwitter APIs
