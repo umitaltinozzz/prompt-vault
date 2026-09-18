@@ -2,13 +2,13 @@
 
 **Personal AI Prompt Library — Save, search, and reuse your best AI prompts**
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
+[Next.js](https://nextjs.org/)
+[TypeScript](https://www.typescriptlang.org/)
+[PostgreSQL](https://www.postgresql.org/)
+[Prisma](https://www.prisma.io/)
+[Tailwind CSS](https://tailwindcss.com/)
+[Docker](https://www.docker.com/)
+[License: MIT](./LICENSE)
 
 ---
 
@@ -53,15 +53,17 @@ Self-hosted product prototype. The repository is public as a portfolio and refer
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | Next.js 16 (App Router, Turbopack) |
-| Language | TypeScript 5 |
-| Database | PostgreSQL 15 |
-| ORM | Prisma |
-| Auth | NextAuth v5 — JWT + Credentials |
-| Styling | Tailwind CSS v4 |
-| Infrastructure | Docker & Docker Compose |
+
+| Layer          | Technology                         |
+| -------------- | ---------------------------------- |
+| Framework      | Next.js 16 (App Router, Turbopack) |
+| Language       | TypeScript 5                       |
+| Database       | PostgreSQL 15                      |
+| ORM            | Prisma                             |
+| Auth           | NextAuth v5 — JWT + Credentials    |
+| Styling        | Tailwind CSS v4                    |
+| Infrastructure | Docker & Docker Compose            |
+
 
 ---
 
@@ -104,10 +106,12 @@ AUTH_URL=http://localhost:3000
 docker compose up -d
 ```
 
-| Service | URL |
-|---|---|
-| App | http://localhost:3000 |
-| Adminer (DB UI) | http://localhost:8080 |
+
+| Service         | URL                                            |
+| --------------- | ---------------------------------------------- |
+| App             | [http://localhost:3000](http://localhost:3000) |
+| Adminer (DB UI) | [http://localhost:8080](http://localhost:8080) |
+
 
 ### Alternative — Local Dev (DB in Docker, Next.js local)
 
@@ -169,15 +173,17 @@ prisma/
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/api/prompts` | List all prompts |
-| `POST` | `/api/prompts` | Create a prompt |
-| `PUT` | `/api/prompts/[id]` | Update a prompt |
-| `DELETE` | `/api/prompts/[id]` | Delete a prompt |
-| `GET` | `/api/tweet?url=` | Fetch tweet content |
-| `POST` | `/api/upload` | Download & store media |
-| `POST` | `/api/auth/register` | Register a new user |
+
+| Method   | Endpoint             | Description            |
+| -------- | -------------------- | ---------------------- |
+| `GET`    | `/api/prompts`       | List all prompts       |
+| `POST`   | `/api/prompts`       | Create a prompt        |
+| `PUT`    | `/api/prompts/[id]`  | Update a prompt        |
+| `DELETE` | `/api/prompts/[id]`  | Delete a prompt        |
+| `GET`    | `/api/tweet?url=`    | Fetch tweet content    |
+| `POST`   | `/api/upload`        | Download & store media |
+| `POST`   | `/api/auth/register` | Register a new user    |
+
 
 All endpoints except `/api/auth/*` require an active session.
 
