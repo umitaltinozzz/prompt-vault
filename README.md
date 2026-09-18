@@ -2,13 +2,15 @@
 
 **Personal AI Prompt Library — Save, search, and reuse your best AI prompts**
 
-[Next.js](https://nextjs.org/)
-[TypeScript](https://www.typescriptlang.org/)
-[PostgreSQL](https://www.postgresql.org/)
-[Prisma](https://www.prisma.io/)
-[Tailwind CSS](https://tailwindcss.com/)
-[Docker](https://www.docker.com/)
-[License: MIT](./LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+![Status](https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge)
 
 ---
 
